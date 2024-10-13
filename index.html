@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay now</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="flex justify-center h-screen items-center ">
+
+        <div class="bg-blue-400 rounded-[26px]">
+
+          <div class="py-2  flex justify-center items-center" >
+             <div class="upper-header">
+              <div class="flex items-center justify-center gap-1">
+                <img src="./Images/demo1.png" class="max-w-[50px] py-2" alt="">
+                <h3 class="font-bold">Company</h3>
+              </div>
+              <div class="flex justify-evenly ">
+                
+                <span class="inline-flex rounded-[64px] border text-center font-semibold transition-all duration-300 ease-in-out h-5 px-2  text-xs border-slate-300 bg-white text-black">Amount: 100$</span>
+
+                <span class="inline-flex rounded-[64px] border text-center font-semibold transition-all duration-300 ease-in-out h-5 px-2  text-xs border-slate-300 bg-white text-black">Invoice: 100$</span>
+
+                <span class="inline-flex rounded-[64px] border text-center font-semibold transition-all duration-300 ease-in-out h-5 px-2  text-xs border-slate-300 bg-white text-black">Id: #dfdfddfdf</span>
+              </div>
+             </div>
+          </div>
+
+
+          <!-- this is payment part -->
+
+
+          <div class="modal">
+            
+            <form class="form">
+              
+              <div class="payment--options">
+
+                <button class="flex justify-center items-center">
+                    <img src="./Images/bikash-logo.png" class="max-w-[80px]" alt="" srcset="">
+                </button>
+
+                <button class="flex justify-center items-center">
+                    <img src="./Images/nagad.png" class="max-w-[80px]" alt="" srcset="">
+                </button>
+
+                <button class="flex justify-center items-center">
+                    <img src="./Images/rocket.png" class="max-w-[80px]" alt="" srcset="">
+                </button>
+                <button class="flex justify-center items-center">
+                    <img src="./Images/islamic-bank.jpg" class="max-w-[80px]" alt="" srcset="">
+                </button>
+                  
+             
+              
+              </div>
+              <div class="separator">
+                <hr class="line">
+                <p>or pay using credit card</p>
+                <hr class="line">
+              </div>
+              <div class="credit-card-info--form">
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Card holder full name</label>
+                  <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name">
+                </div>
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Card Number</label>
+                  <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="input_container">
+                  <label for="password_field" class="input_label">Expiry Date / CVV</label>
+                  <div class="split">
+                  <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+                  <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+                </div>
+                </div>
+              </div>
+                <button class="purchase--btn bg-blue-400">Checkout</button>
+            </form>
+            </div>
+
+
+        </div>
+        
+    </div>
+</body>
+</html>
